@@ -68,7 +68,7 @@ nav {
     border: 1px solid #222222;
     color: black;
     background-color: white;
-    transition: background-color 0.2s ease-in-out;
+    transition: all 0.25s ease;
 }
 
 /* header section */
@@ -78,8 +78,7 @@ header {
     display: flex;
     padding: 0 70px;
     background-color: #ffffff;
-    /* background-image: linear-gradient(to right, rgba(224,224,224,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(224,224,224,0.2) 1px, transparent 1px);
-    background-size: 70px 70px; */
+    align-items: center;
 }
 
 .header-left {
@@ -91,6 +90,7 @@ header {
     flex-direction: column;
     justify-content: center;
     gap: 8px;
+    position: relative;
 }
 
 .intro-top {
@@ -104,7 +104,9 @@ header {
 }
 
 .intro-middle span {
-    color: #676b6e;
+    background: linear-gradient(90deg, #222, #676b6e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro-bottom {
@@ -131,6 +133,7 @@ header {
     align-items: center;
     gap: 7px;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 .cv {
@@ -154,108 +157,87 @@ header {
     background-color: #f5f2f2;
 }
 
+.floating-icon {
+    position: absolute;
+    opacity: 0.7
+}
+
+.github {
+    top: 100px;
+    right: 230px;
+    filter: blur(3.5px);
+    transform: rotate(20deg);
+}
+
+.nextjs {
+    bottom: 60px;
+    left: -50px;
+    filter: blur(2.5px);
+    transform: rotate(-30deg);
+}
+
 .header-right {
     width: 50%;
     height: calc(100vh - 75px);
     background-image: linear-gradient(to right, rgba(224,224,224,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(224,224,224,0.2) 1px, transparent 1px);
     background-size: 70px 70px;
     background-color: white;
-    position: relative;
-    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 10px;
+    font-family: 'Inter';
 }
 
-/* .tech-badge {
-    position: absolute;
+.header-right h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.stack-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tech-stack-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-direction: column;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    cursor: pointer
+}
+
+.tech-stack-container:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tech-badge {
     padding: 6px 12px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     border-radius: 15px;
-    background: #f5f5f5;
-    color: #222;
+    background: white;
     border: 1px solid #ddd;
-    font-family: 'Inter';
-    top: 50%;
-    left: 50%;
     cursor: pointer;
-} */
-
-.tech-icon {
-    position: absolute;
-    opacity: 0.9;
-}
-
-.angular {
-    top: -15px;
-    left: 300px;
-    transform: rotate(-8deg);
-    filter: blur(0.4px);
-}
-
-.bootstrap {
-    top: -10px;
-    left: -10px;
-    transform: rotate(-30deg);
-    filter: blur(1px);
-}
-
-.css {
-    top: 70px;
-    left: 390px;
-    transform: rotate(-10deg);
-    filter: blur(0.5px)
-}
-
-.git {
-    right: 0;
-    transform: rotate(10deg);
-    filter: blur(0.6px)
-}
-
-.github {
-    left: 470px;
-    top: 35px;
-    transform: rotate(10deg);
-    filter: blur(0.4px)
-}
-
-.html {
-    left: 130px;
-    top: 10px;
-    filter: blur(0.5px);
-    transform: rotate(10deg);
-}
-
-.javascript {
-    left: 230px;
-    top: 50px;
-    transform: rotate(20deg);
-}
-
-.vscode {
-    top: 80px;
-    left: 60px;
-    transform: rotate(-20deg);
-}
-
-.react {
-    right: -50px;
-    top: 80px
-}
-
-.typescript {
-    right: 40px;
-    top: 80px;
-    transform: rotate(-20deg);
-}
-
-.nextjs {
-    top: 110px;
-    left: 150px;
-    filter: blur(2px)
+    color: #333
 }
 
 section {
-    height: 100vh
+    height: calc(100vh - 75px);
+    background-color: black
 }
 
 
