@@ -49,6 +49,10 @@ nav {
     text-decoration: underline
 }
 
+.nav-right a {
+    text-decoration: none;
+}
+
 .contact-me {
     border: 1px solid #222222;
     background-color: #222222;
@@ -365,5 +369,6 @@ header {
     transform: rotate(6deg);
 }
 
-/*  */
+/* contact section */
+
 
