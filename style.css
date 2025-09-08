@@ -287,7 +287,7 @@ header {
 .projects-section {
     background-color: white;
     font-family: 'Inter';
-    padding: 60px 60px;
+    padding: 60px 60px 30px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,5 +370,56 @@ header {
 }
 
 /* contact section */
+.contact-section {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+}
+
+.contact-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.social-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 15px;
+
+}
+
+.social-box-left {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    font-size: 15px;
+}
+
+/* footer section */
+footer {
+    background-color: white;
+    color: #555;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    font-family: 'Inter';
+}
+
 
 
