@@ -283,14 +283,17 @@ header {
 .projects-section {
     background-color: white;
     font-family: 'Inter';
-    padding: 60px 60px; 
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-section h2 {
     font-size: 22px;
     font-weight: 600;
     color: #222;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid #e0e0e0;
@@ -302,28 +305,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f9f9f9;
+    /* background: #f9f9f9; */
     border: 1px solid #e0e0e0;
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 95px;
     padding: 25px;
-    gap: 40px;
-    
+    position: relative;
+}
+
+.project-left {
+    width: 55%;
 }
 
 .project-title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   color: #222;
-  margin-bottom: 10px;
 }
 
 .project-description {
   color: #555;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 15px;
-  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-right {
+    width: 45%;
 }
 
 .tech-stack {
@@ -337,29 +345,25 @@ header {
   border: 1px solid #ddd;
   padding: 5px 12px;
   border-radius: 15px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  color: #333;
-}
-
-.project-links {
-  display: flex;
-  gap: 15px;
-}
-
-.project-btn {
-  background-color: #222;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s ease;
+  color: grey;
 }
 
 .project-right img {
-    max-width: 100%;
-    border: 1px solid black
+    width: 470px;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: -35px;
+    transform: rotate(-6deg);
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
+
+.projects-section .project-card:nth-child(even) .project-right img {
+    right: 25px;
+    transform: rotate(6deg);
+}
+
+/*  */
 
