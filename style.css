@@ -11,7 +11,7 @@ body {
 /* navbar section */
 nav {
     width: auto;
-    height: 60px;
+    height: 57px;
     font-family: 'Inter';
     display: flex;
     align-items: center;
@@ -23,9 +23,9 @@ nav {
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
     margin: 0 20%;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    padding: 0 10px;
+    padding: 0 10px 0 15px;
 }
 
 .gradient-logo {
@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-link:hover {
-    border-bottom: 2px solid #63676a;
+    border-bottom: 2px solid rgb(34, 34, 34, 0.65);
 }
 
 .nav-right a {
@@ -76,7 +76,7 @@ nav {
 }
 
 .contact-me:hover {
-    border: 1px solid #63676a;
+    border: 1px solid rgb(34, 34, 34, 0.5);
     color: black;
     background-color: transparent;
     transition: all 0.25s ease;
