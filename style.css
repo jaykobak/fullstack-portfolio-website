@@ -125,6 +125,13 @@ nav img, .contact-me-mobile, .vertical-divider, .nav-mobile-icons {
     nav img {
         display: block;
         width: 24px;
+        transition: all 0.5s ease;
+    }
+
+    nav img:hover {
+        padding: 10px 15px;
+        background-color: #f7f8fa;
+        border-radius: 10px;
     }
 
     .nav-links, .nav-right, .nav-left {
