@@ -12,7 +12,7 @@ body {
 nav {
     max-width: 650px;
     height: 57px;
-    font-family: 'Inter';
+    font-family: 'satoshi';
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +76,7 @@ nav img, .contact-me-mobile, .vertical-divider, .nav-mobile-icons {
     border-radius: 15px;
     padding: 8px 12px;
     font-size: 14px;
-    font-family: 'Inter';
+    font-family: 'satoshi';
     cursor: pointer;
 }
 
@@ -174,14 +174,19 @@ nav img, .contact-me-mobile, .vertical-divider, .nav-mobile-icons {
 }
 
 /* header section */
+
 header {
-    width: auto;
-    height: 100vh;
-    display: flex;
-    padding: 0 70px;
+    max-width: 60%;
     background-color: #ffffff;
-    align-items: center;
-    transform: translateY(-59px);
+    margin: auto;
+}
+
+.header-center {
+    height: 80vh;
+    align-content: center;
+    padding: 0 0 0 50px;
+    font-family: 'satoshi';
+    font-weight: 900;
 }
 
 .header-left {
@@ -194,16 +199,20 @@ header {
     justify-content: center;
     gap: 8px;
     position: relative;
+    background-image: linear-gradient(to right, rgba(224,224,224,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(224,224,224,0.2) 1px, transparent 1px);
+    background-size: 70px 70px;
 }
 
 .intro-top {
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 400;
+    font-weight: 500;
 }
 
 .intro-middle {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 600;
+    max-width: 500px;
 }
 
 .intro-middle span {
