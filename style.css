@@ -32,14 +32,7 @@ nav {
     display: none;
 }
 
-.gradient-logo {
-    background: linear-gradient(90deg, #989c9d, #03060e);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 27px;
-    font-weight: 600;
-    letter-spacing: -1px;
+.nav-left img {
     cursor: pointer;
 }
 
@@ -65,26 +58,29 @@ nav {
     text-decoration: none;
 }
 
-.contact-me {
+.black-button {
     border: 1px solid #222222;
     background-color: #222222;
     color: white;
     display: flex;
     align-items: center;
-    gap: 9px;
-    font-weight: 500;
     border-radius: 15px;
-    padding: 8px 12px;
-    font-size: 14px;
     font-family: 'satoshi';
     cursor: pointer;
 }
 
-.contact-me:hover {
+.black-button:hover {
     border: 1px solid rgb(34, 34, 34, 0.5);
     color: black;
     background-color: transparent;
     transition: all 0.25s ease;
+}
+
+.contact-me {
+    gap: 9px;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-size: 14px;
 }
 
 @media (max-width: 330px) {
@@ -186,34 +182,37 @@ header {
     padding: 0 0 0 50px;
     font-family: 'satoshi';
     font-weight: 900;
+    line-height: 1.2;
 }
 
 .intro-top {
-    font-size: 40px;
+    /* font-size: 50px; */
+    font-size: 3.1rem;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 10px;
+    letter-spacing: -1.6px;
 }
 
 .intro-top img {
-    border: 8px solid #f8f8f8;
-    border-radius: 15px;
+    border: 5px solid #f8f8f8;
+    border-radius: 27px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1)
 }
 
 .intro-middle {
-    font-size: 40px;
+    font-size: 3.1rem;
     font-weight: 600;
-}
-
-.intro-middle span {
-    color: #c2babd;
+    letter-spacing: -1.6px;
 }
 
 .intro-bottom {
     color: #7e8084;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 400;
+    max-width: 70%;
+    margin: 15px 0;
 }
 
 .header-buttons {
