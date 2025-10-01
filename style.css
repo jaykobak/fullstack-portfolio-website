@@ -175,13 +175,13 @@ header {
     background-color: #ffffff;
     margin: auto;
     padding-top: 40px;
+    font-family: 'satoshi';
 }
 
 .header-center {
     height: 80vh;
     align-content: center;
     padding: 0 0 0 50px;
-    font-family: 'satoshi';
     font-weight: 900;
     line-height: 1.2;
 }
@@ -249,19 +249,59 @@ header {
     border-radius: 50%;
 }
 
-/* .header-button {
-    border: none;
-    padding: 8px 14px;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Inter';
-    border-radius: 20px;
+.sticky-socials {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icon {
+    background: #222;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
-    gap: 7px;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(34,34,34,0.08);
+    transition: background-color 0.2s, transform 0.2s;
+    position: relative;
     cursor: pointer;
-    transition: all 0.25s ease;
-} */
+}
+
+.social-icon img {
+    width: 26px;
+    height: 26px;
+    filter: grayscale(0.2) brightness(1.2);
+    transition: filter 0.2s;
+}
+
+.social-icon:hover {
+    background-color: gray;
+    transform: scale(1.08);
+}
+
+.tooltip {
+    position: absolute;
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 10px;
+    right: 110%;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.social-icon:hover .tooltip {
+    opacity: 1;
+}
 
 .cv {
     background-color: #222222;
