@@ -175,7 +175,7 @@ header {
     background-color: #ffffff;
     margin: auto;
     padding-top: 40px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .header-center {
@@ -185,7 +185,7 @@ header {
     font-family: 'satoshi';
     font-weight: 900;
     line-height: 1.2;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .intro-top {
