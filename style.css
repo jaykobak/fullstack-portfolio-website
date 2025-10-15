@@ -298,11 +298,11 @@ header {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-#menu-toggle:checked ~ .menu-icon {
+#menu-toggle:checked~.menu-icon {
   background-image: url('./assets/icons/cancel.svg');
 }
 
-#menu-toggle:checked ~ .socials {
+#menu-toggle:checked~.socials {
   transform: translateY(-170px);
   opacity: 1;
 }
@@ -327,7 +327,8 @@ header {
   transition: filter 0.2s;
 }
 
-.social-icon:hover, .menu-icon:hover {
+.social-icon:hover,
+.menu-icon:hover {
   background-color: gray;
   transform: scale(1.08);
 }
@@ -348,6 +349,36 @@ header {
 
 .social-icon:hover .tooltip {
   opacity: 1;
+}
+
+@media (max-width: 899px) {
+  header {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .header-center {
+    /* padding: 0 !important; */
+    padding: 25px;
+  }
+
+  .intro-top {
+    font-size: 2.4rem;
+    white-space: nowrap;
+  }
+
+  .intro-top img {
+    width: 55px;
+    border-radius: 22px;
+    border: 3px solid #f8f8f8;
+    display: none;
+  }
+
+  .intro-middle,
+  .intro-bottom,
+  .header-buttons {
+    display: none;
+  }
 }
 
 /* about me section */
