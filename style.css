@@ -191,6 +191,10 @@ header {
   line-height: 1.2;
 }
 
+.intro-image-mobile {
+  display: none;
+}
+
 .intro-top {
   font-size: 3.1rem;
   font-weight: 600;
@@ -353,7 +357,7 @@ header {
 
 @media (max-width: 899px) {
   header {
-    max-width: 100%;
+    max-width: 99%;
     margin: 0;
   }
 
@@ -361,16 +365,19 @@ header {
     padding: 25px;
   }
 
+  .intro-image-mobile {
+    display: block;
+    border-radius: 35px;
+    width: 90px;
+    border: 8px solid #f8f8f8;
+    margin-bottom: 15px;
+  }
+
   .intro-top, .intro-middle {
     font-size: 2.3rem;
-    white-space: nowrap;
   }
 
-  .intro-top img {
-    display: none;
-  }
-
-  .intro-middle span {
+  .intro-top img, .intro-middle span {
     display: none;
   }
 
