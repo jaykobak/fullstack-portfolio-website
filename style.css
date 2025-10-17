@@ -234,7 +234,7 @@ header {
 }
 
 .open-to-work {
-  font-weight: 500;
+  font-weight: 400 !important;
   padding: 12px 25px;
   font-size: 15px;
   border-radius: 20px;
@@ -361,8 +361,25 @@ header {
     padding: 25px;
   }
 
-  .intro-top, .intro-middle, .intro-bottom, .header-buttons {
+  .intro-top, .intro-middle {
+    font-size: 2.3rem;
+    white-space: nowrap;
+  }
+
+  .intro-top img {
     display: none;
+  }
+
+  .intro-middle span {
+    display: none;
+  }
+
+  .intro-bottom {
+    max-width: 100%;
+  }
+
+  .hire-me {
+    font-size: 16px;
   }
 }
 
