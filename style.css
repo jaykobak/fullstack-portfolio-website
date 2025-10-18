@@ -357,8 +357,7 @@ header {
 
 @media (max-width: 899px) {
   header {
-    max-width: 99%;
-    margin: 0;
+    max-width: 100%;
   }
 
   .header-center {
@@ -382,7 +381,7 @@ header {
   }
 
   .intro-bottom {
-    max-width: 100%;
+    max-width: 400px;
   }
 
   .hire-me {
