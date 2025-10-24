@@ -392,7 +392,7 @@ header {
 
 /* Technical skills section */
 .technical-skills {
-  font-family: satoshi;
+  font-family: "satoshi";
   margin: 0;
 }
 
@@ -402,8 +402,9 @@ header {
   margin: auto;
   display: flex;
   justify-content: center;
-  overflow-x: auto;
+  overflow: hidden;
   padding: 30px 0;
+  border-radius: 10px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -415,8 +416,9 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1.5em;
-  animation: spin 12s linear infinite;
+  animation: scroll 25s linear infinite;
   padding-right: 1em;
+  flex-shrink: 0;
 }
 
 .card {
@@ -429,15 +431,16 @@ header {
   text-align: center;
   align-content: center;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-@keyframes spin {
+@keyframes scroll {
   from {
-    transform: translate(0)
+    transform: translateX(0);
   }
 
   to {
-    transform: translate(-100%)
+    transform: translateX(-100%);
   }
 }
 
