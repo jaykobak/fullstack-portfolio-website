@@ -405,6 +405,33 @@ header {
   overflow: hidden;
   padding: 30px 0;
   border-radius: 10px;
+  position: relative;
+}
+
+/* Left fade gradient */
+.carousel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  background: linear-gradient(to right, #191919, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Right fade gradient */
+.carousel::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  background: linear-gradient(to left, #191919, transparent);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .carousel::-webkit-scrollbar {
@@ -441,6 +468,12 @@ header {
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 899px) {
+  .carousel {
+    max-width: 100%;
   }
 }
 
